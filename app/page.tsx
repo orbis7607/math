@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import Link from "next/link";
 import { supabase, isSupabaseConfigured } from "../lib/supabase";
 
 // Types
@@ -516,6 +517,18 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center py-10 px-4 overflow-x-hidden font-sans">
+      {/* Floating AI Tutor Button */}
+      <Link
+        href="/chatbot"
+        className="fixed bottom-6 right-6 z-40 group flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm font-semibold shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-105 active:scale-95 transition-all"
+      >
+        <span className="text-lg">🤖</span>
+        <span className="hidden sm:block">수학 AI 튜터</span>
+        <span className="flex h-2 w-2 relative">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-40" />
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-white/70" />
+        </span>
+      </Link>
       
       {/* 3D and utility custom CSS injector */}
       <style>{`

@@ -75,25 +75,19 @@ export default function RootLayout({
                 홈
               </Link>
               <Link
+                id="nav-chatbot"
+                href="/chatbot"
+                className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:text-indigo-400 flex items-center gap-1.5"
+              >
+                <span>🤖</span>
+                <span>수학 AI 튜터</span>
+              </Link>
+              <Link
                 id="nav-features"
                 href="#features"
                 className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:text-indigo-400"
               >
                 주요 기능
-              </Link>
-              <Link
-                id="nav-templates"
-                href="#templates"
-                className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:text-indigo-400"
-              >
-                템플릿
-              </Link>
-              <Link
-                id="nav-docs"
-                href="#docs"
-                className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:text-indigo-400"
-              >
-                가이드
               </Link>
             </nav>
 
